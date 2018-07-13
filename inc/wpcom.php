@@ -12,9 +12,9 @@
  * @since Scrappy 1.3
  */
 $themecolors = array(
-	'bg' => '',
-	'border' => '',
-	'text' => '',
-	'link' => '',
-	'url' => '',
+  'bg' => '',
+  'border' => '',
+  'text' => '',
+  'link' => '',
+  'url' => '',
 );

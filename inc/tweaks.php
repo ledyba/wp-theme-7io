@@ -14,8 +14,8 @@
  * @since Scrappy 1.3
  */
 function scrappy_page_menu_args( $args ) {
-	$args['show_home'] = true;
-	return $args;
+  $args['show_home'] = true;
+  return $args;
 }
 add_filter( 'wp_page_menu_args', 'scrappy_page_menu_args' );
 
@@ -25,12 +25,12 @@ add_filter( 'wp_page_menu_args', 'scrappy_page_menu_args' );
  * @since Scrappy 1.3
  */
 function scrappy_body_classes( $classes ) {
-	// Adds a class of single-author to blogs with only 1 published author
-	if ( is_multi_author() ) {
-		$classes[] = 'group-blog';
-	}
+  // Adds a class of single-author to blogs with only 1 published author
+  if ( is_multi_author() ) {
+    $classes[] = 'group-blog';
+  }
 
-	return $classes;
+  return $classes;
 }
 add_filter( 'body_class', 'scrappy_body_classes' );
 
@@ -40,13 +40,13 @@ add_filter( 'body_class', 'scrappy_body_classes' );
  * @since Scrappy 1.3
  */
 function scrappy_enhanced_image_navigation( $url, $id ) {
-	if ( ! is_attachment() && ! wp_attachment_is_image( $id ) )
-		return $url;
+  if ( ! is_attachment() && ! wp_attachment_is_image( $id ) )
+    return $url;
 
-	$image = get_post( $id );
-	if ( ! empty( $image->post_parent ) && $image->post_parent != $id )
-		$url .= '#main';
+  $image = get_post( $id );
+  if ( ! empty( $image->post_parent ) && $image->post_parent != $id )
+    $url .= '#main';
 
-	return $url;
+  return $url;
 }
 add_filter( 'attachment_link', 'scrappy_enhanced_image_navigation', 10, 2 );
