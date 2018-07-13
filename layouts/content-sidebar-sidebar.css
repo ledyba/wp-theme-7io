@@ -4,24 +4,24 @@ Layout: Content-Sidebar-Sidebar
 */
 
 .site-content {
-	float: left;
-	width: 100%;
+  float: left;
+  width: 100%;
 }
 #content {
-	margin: 0 40% 0 0;
+  margin: 0 40% 0 0;
 }
 #main .widget-area {
-	float: left;
-	overflow: hidden;
-	width: 20%;
+  float: left;
+  overflow: hidden;
+  width: 20%;
 }
 #secondary { /* Sidebar 1 */
-	margin: 0 0 0 -40%;
+  margin: 0 0 0 -40%;
 }
 #tertiary { /* Sidebar 2 */
-	margin: 0 0 0 -20%;
+  margin: 0 0 0 -20%;
 }
 .site-footer {
-	clear: both;
-	width: 100%;
+  clear: both;
+  width: 100%;
 }

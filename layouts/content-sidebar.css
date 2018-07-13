@@ -4,22 +4,22 @@ Layout: Content-Sidebar
 */
 
 .site-content {
-	float: left;
-	margin: 0 -25% 0 0;
-	width: 100%;
+  float: left;
+  margin: 0 -25% 0 0;
+  width: 100%;
 }
 #content {
-	margin: 0 25% 0 0;
+  margin: 0 25% 0 0;
 }
 #secondary { /* Sidebar 1 */
-	float: right;
-	overflow: hidden;
-	width: 25%;
+  float: right;
+  overflow: hidden;
+  width: 25%;
 }
 #tertiary { /* Sidebar 2 */
-	clear: right;
+  clear: right;
 }
 .site-footer {
-	clear: both;
-	width: 100%;
+  clear: both;
+  width: 100%;
 }
