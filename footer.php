@@ -18,7 +18,7 @@
       <div class="stripes">&nbsp;</div>
     </div>
     <div class="site-info">
-      <a href="https://github.com/ledyba/wp-theme-7io">This theme is available on github!</a>
+    それ故に…悔いの残らぬよう、やり遂げなさい。
     </div><!-- .site-info -->
   </footer><!-- .site-footer .site-footer -->
 </div><!-- #page .hfeed .site -->
