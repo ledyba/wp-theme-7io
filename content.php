@@ -11,8 +11,8 @@
     <div class="entry-meta">
       <div class="post-date">
         <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php _e( 'Permanent Link to' , 'scrappy' ); ?> <?php the_title_attribute(); ?>">
-                                <?php the_time('Y'); ?>&nbsp;<br>
-        <?php the_time('m-d'); ?>
+          <?php the_time('Y'); ?>&nbsp;<br>
+          <?php the_time('m-d'); ?>
         </a>
       </div>
     </div><!-- .entry-meta -->

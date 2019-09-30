@@ -9,7 +9,7 @@
   <header class="entry-header">
     <div class="entry-meta">
       <div class="post-date">
-                                <?php the_time('Y'); ?>&nbsp;<br>
+        <?php the_time('Y'); ?>&nbsp;<br>
         <?php the_time('m/d'); ?>
       </div>
       <?php edit_post_link( __( 'Edit', 'scrappy' ), '<span class="edit-link">', '</span>' ); ?>
