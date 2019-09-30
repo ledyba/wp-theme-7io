@@ -58,7 +58,7 @@ if (is_search() || is_archive() || is_paged()) {
       </a>
     <?php } // if ( ! empty( $header_image ) ) ?>
     <h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-    <blockquote><?php include('/opt/www/7io.org/app/kotoba.php/kotoba.php'); ?></blockquote>
+    <blockquote style="margin 1em; border-radius: 1em;"><?php include('/opt/www/7io.org/app/kotoba.php/kotoba.php'); ?></blockquote>
 
     <nav role="navigation" class="site-navigation main-navigation">
       <h1 class="assistive-text"><?php _e( 'Menu', 'scrappy' ); ?></h1>
