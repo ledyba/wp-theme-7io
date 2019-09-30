@@ -1,3 +1,12 @@
+# Scrappy
+
+This WordPress theme has been maintained for [7io.org].
+
+Originally written by [Caroline Moore](https://caroline.blog/).
+
+## original readme.txt
+
+```
 Scrappy is a fresh, feminine, scrapbook-style theme with six header styles.
 
 Google Web Fonts used: Rochester, Unna, Alegreya.
@@ -42,3 +51,4 @@ v1.1.1 - Changed Theme URI
 v1.1 - Set current-menu-item and current-page-item classes.  Changed support contact in readme.txt
 
 v1.0 - Hello, world!
+```

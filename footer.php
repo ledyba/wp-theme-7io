@@ -18,10 +18,7 @@
       <div class="stripes">&nbsp;</div>
     </div>
     <div class="site-info">
-      <?php do_action( 'scrappy_credits' ); ?>
-      <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'scrappy' ) ); ?>" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'scrappy' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'scrappy' ), 'WordPress' ); ?></a>
-      <span class="sep"> | </span>
-      <?php printf( __( 'Theme: %1$s by %2$s', 'scrappy' ), 'Scrappy', '<a href="http://carolinemoore.net/" rel="designer">Caroline Moore</a>' ); ?>
+      <a href="https://github.com/ledyba/wp-theme-7io">This theme is available on github!</a>
     </div><!-- .site-info -->
   </footer><!-- .site-footer .site-footer -->
 </div><!-- #page .hfeed .site -->
