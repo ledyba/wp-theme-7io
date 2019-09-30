@@ -40,10 +40,12 @@ if (is_search() || is_archive() || is_paged()) {
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
-  wp_deregister_script('jquery');
   wp_head();
 ?>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" async></script>
+<script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
 </head>
 
 <body <?php body_class(); ?>>
