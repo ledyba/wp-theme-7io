@@ -194,6 +194,12 @@ function scrappy_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'scrappy_scripts' );
 
+// disable embedded jquery
+add_filter('init',function(){
+  if (!is_admin()){
+    wp_deregister_script('jquery');
+  }
+});
 
 /**
  * Register Google Fonts
