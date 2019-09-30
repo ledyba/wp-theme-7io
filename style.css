@@ -179,6 +179,8 @@ blockquote {
   box-sizing: border-box;
   font-style: italic;
   background-color: #f6f3df;
+  margin: 1em;
+  border-radius: 0.5em;
 }
 
 blockquote:before{
@@ -186,7 +188,9 @@ blockquote:before{
   position: absolute;
   top: 18px;
   left: 15px;
-  background-image: image("icon/SVG/120-quotes-left.svg");
+  background: no-repeat center/cover url("icon/SVG/120-quotes-left.svg");
+  width: 30px;
+  height: 30px;
 }
 
 blockquote p {
