@@ -178,8 +178,7 @@ blockquote {
   padding: 10px 15px 10px 60px;
   box-sizing: border-box;
   font-style: italic;
-  background: #efefef;
-  color: #555;
+  background-color: #f6f3df;
 }
 
 blockquote:before{
