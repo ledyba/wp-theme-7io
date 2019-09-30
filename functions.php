@@ -198,6 +198,7 @@ add_action( 'wp_enqueue_scripts', 'scrappy_scripts' );
 add_filter('init',function(){
   if (!is_admin()){
     wp_deregister_script('jquery');
+    wp_deregister_script('wp-embed');
   }
 });
 
