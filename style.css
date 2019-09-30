@@ -197,7 +197,7 @@ blockquote:before{
 
 blockquote p {
   padding: 0;
-  margin: 10px 0;
+  margin: 1em 0;
   line-height: 1.7;
 }
 
@@ -667,7 +667,7 @@ header#masthead {
   font-size: 65px;
   font-size: 6.5rem;
   line-height: 1em;
-  margin: 15px 15px -8px;
+  margin: 15px 15px 15px 0px;
   position: relative;
   text-align: center;
   z-index: 5;
