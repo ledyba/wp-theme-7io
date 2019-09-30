@@ -175,7 +175,7 @@ dfn, cite, em, i {
 }
 blockquote {
   position: relative;
-  padding: 0.5em 1em 0.5em 3em;
+  padding: 0.5em 1em 0.5em 3.2em;
   box-sizing: border-box;
   font-style: italic;
   background-color: #f6f3df;
@@ -187,7 +187,7 @@ blockquote:before{
   display: inline-block;
   position: absolute;
   top: 0.5em;
-  left: 0.5em;
+  left: 0.7em;
   background: no-repeat center/cover url("icon/SVG/120-quotes-left.svg");
   width: 1.5em;
   height: 1.5em;
