@@ -18,7 +18,7 @@
       <div class="stripes">&nbsp;</div>
     </div>
     <div class="site-info">
-    <span style="font-style: italic">それ故に…悔いの残らぬよう、やり遂げなさい。</span> 
+    <span style="font-style: italic">Since 2004 / それ故に…悔いの残らぬよう、やり遂げなさい。</span> 
     </div><!-- .site-info -->
   </footer><!-- .site-footer .site-footer -->
 </div><!-- #page .hfeed .site -->
