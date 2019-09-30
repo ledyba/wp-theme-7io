@@ -59,8 +59,6 @@ if (is_search() || is_archive() || is_paged()) {
     <?php } // if ( ! empty( $header_image ) ) ?>
     <hgroup>
       <h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-      <hr>
-      <h2 class="site-description" style="text-align: left; font-size: 1.0em;">きょうのひとこと：</h2>
       <blockquote><?php include('/opt/www/7io.org/app/kotoba.php/kotoba.php'); ?></blockquote>
     </hgroup>
 
