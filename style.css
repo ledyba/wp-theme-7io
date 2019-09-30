@@ -180,7 +180,7 @@ blockquote {
   font-style: italic;
   background-color: #f6f3df;
   margin: 1em;
-  border-radius: 0.5em;
+  border-radius: 0.7em;
 }
 
 blockquote:before{
@@ -1226,4 +1226,8 @@ body * {
 
 article pre * {
   font-family: monospace !important;
+}
+
+.hidden {
+  display: none;
 }

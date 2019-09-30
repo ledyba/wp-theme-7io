@@ -1,31 +1,51 @@
-jQuery( document ).ready( function( $ ) {
-  var $browserWidth = $( window ).width();
-  var $masthead = $( '#masthead' );
+document.addEventListener('DOMContentLoaded', function(event) {
+  const makeSmall = function() {
+    const mastHead = document.getElementById('masthead');
 
-  $.fn.smallMenu = function() {
-    $( $masthead ).find( '.site-navigation' ).removeClass( 'main-navigation' ).addClass( 'main-small-navigation' );
-    $( $masthead ).find( '.site-navigation h1' ).removeClass( 'assistive-text' ).addClass( 'menu-toggle' );
-
-    $( '.menu-toggle' ).click( function () {
-      $( $masthead ).find( '.menu' ).toggle();
-      $( this ).toggleClass( 'toggled-on' );
+    mastHead.querySelectorAll('.site-navigation').forEach(function(node, key, parent) {
+      node.classList.toggle('main-navigation', false);
+      node.classList.toggle('main-small-navigation', true);
     });
-  }
 
-  $(window).resize(function() {
-    var $browserWidth = $( window ).width();
+    mastHead.querySelectorAll('.site-navigation h1').forEach(function(node, key, parent) {
+      node.classList.toggle('assistive-text', false);
+      node.classList.toggle('menu-toggle', true);
+    });
 
-    if ( $browserWidth < 800 ) {
-      $.fn.smallMenu();
+    mastHead.querySelectorAll('.menu-toggle').forEach(function(node, key, parent) {
+      // FIXME:
+      node.onclick = function() {
+        /** @param {HTMLElement} elem */
+        mastHead.querySelectorAll('.menu').forEach(function(elem, key, parent) {
+          elem.classList.toggle('hidden');
+        });
+        node.classList.toggle('toggled-on');
+      };
+    });
+  };
+
+  window.addEventListener('resize', function(event){
+    if(window.width < 800) {
+      makeSmall();
     } else {
-      $( $masthead ).find( '.site-navigation' ).removeClass( 'main-small-navigation' ).addClass( 'main-navigation' );
-      $( $masthead ).find( '.site-navigation h1' ).removeClass( 'menu-toggle' ).addClass( 'assistive-text' );
-      $( $masthead ).find( '.menu' ).removeAttr( 'style' );
+      const mastHead = document.getElementById('masthead');
+
+      mastHead.querySelectorAll('.site-navigation').forEach(function(node, key, parent) {
+        node.classList.toggle('main-navigation', true);
+        node.classList.toggle('main-small-navigation', false);
+      });
+  
+      mastHead.querySelectorAll('.site-navigation h1').forEach(function(node, key, parent) {
+        node.classList.toggle('assistive-text', true);
+        node.classList.toggle('menu-toggle', false);
+      });  
+      mastHead.querySelectorAll('.menu').forEach(function(node, key, parent) {
+        node.removeAttribute('style');
+      });
     }
   });
 
-  if ( $browserWidth < 800 ) {
-    $.fn.smallMenu();
+  if(window.width < 800) {
+    makeSmall();
   }
-
-} );
+});
