@@ -448,6 +448,9 @@ a:active {
   clear: both;
   margin: 0 0 1.6em;
 }
+.footnote-link.footnote-identifier-link {
+  vertical-align: super;
+}
 
 
 /* =Media
